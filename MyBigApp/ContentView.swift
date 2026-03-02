@@ -20,12 +20,7 @@ struct ContentView: View {
                     Text("Joni Mitchell")
                     Spacer()
                     
-                    VStack {
-                        HStack {
-                            Text("Release date")
-                                .bold()
-                            Text("June 22, 1971")
-                        }
+                 ExtractedView(question: "Release date:", answer: "June 22, 1971")
                     }
                 }
             }
@@ -43,10 +38,28 @@ struct ContentView: View {
                 }
             }
         }
-    }
+    
 
 
         
 #Preview {
     ContentView()
 }
+
+struct ExtractedView: View {
+    let question: String
+    let answer: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text(question)
+                    .bold()
+                Text(answer)
+                
+            }
+        }
+    }
+}
+    
+
