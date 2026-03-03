@@ -27,6 +27,10 @@ struct DayTwoView: View {
                 ExtractedView2(album: "Abbey Road", artistAndDate: "The Beatles 􀉉 1965")
                 ExtractedView2(album: "Baby", artistAndDate: "Dijon 􀉉 2025")
                 ExtractedView2(album: "Blood On The Tracks", artistAndDate: "Bob Dylan 􀉉 19__")
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
             }
         }
     }
